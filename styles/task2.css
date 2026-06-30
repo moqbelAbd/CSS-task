@@ -1,5 +1,4 @@
 
-
 .page {
     display :flex;
     flex-direction: column;
@@ -122,6 +121,7 @@ font-weight:600 ;
     justify-content: center;
     gap: 10px;
 }
+
 .sign--option{
     background-color: transparent;
     color:#232929;
@@ -241,7 +241,7 @@ height: 25px;
 .third-container{
 border-radius: 10px;
 padding: 20px;
-
+max-width: 320px;
 }
 
  .third-page h1{
@@ -305,6 +305,10 @@ cursor:pointer;
     background-color: #17c4c4;
         height: 70vh;
 
+}
+
+.forth-container{
+max-width: 320px;
 }
 
 .forth-page h1{

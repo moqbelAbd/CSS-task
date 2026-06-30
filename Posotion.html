@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Demo</title>
+  <style>
+    /* --- Your CSS --- */
+    
+    /* Default flow */
+    p {
+      position: static;
+    }
+
+    /* Offset from normal flow */
+    .box-relative {
+      position: relative;
+      top: 20px;
+      left: 10px;
+    }
+
+    /* Positioned absolutely within its container */
+    .container {
+      position: relative;
+    }
+    
+    .child-absolute {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    /* Stays fixed at top */
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+    }
+
+    /* Becomes fixed after scrolling */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background: lightgray;
+    }
+
+    /* --- Extra CSS just to make the demo visible --- */
+    body {
+      margin: 0;
+      padding: 60px 20px 20px; /* Padding top prevents fixed nav from hiding content */
+      font-family: sans-serif;
+      height: 200vh; /* Forces the page to be tall so you can scroll */
+    }
+
+    .box-relative {
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    .container {
+      background-color: lightgoldenrodyellow;
+      height: 150px;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .child-absolute {
+      background-color: lightcoral;
+      padding: 10px;
+    }
+
+    .fixed-nav {
+      border-bottom: 2px solid #333;
+      padding: 10px;
+      z-index: 10; /* Ensures it stays above everything else */
+    }
+
+    .sticky-header {
+      padding: 10px;
+      margin-top: 20px;
+      border: 1px dashed #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed-nav">
+    <strong>Fixed Nav:</strong> I am permanently fixed to the top of the viewport!
+  </div>
+
+  <p><strong>Static Paragraph:</strong> I flow naturally with the rest of the page document.</p>
+
+  <div class="box-relative">
+    <strong>Relative Box:</strong> I am pushed 20px down and 10px left relative to where I normally would be.
+  </div>
+
+  <div class="sticky-header">
+    <strong>Sticky Header:</strong> Scroll down! I will act normally until I hit the top of the screen, then I'll stick.
+  </div>
+
+  <div class="container">
+    <strong>Relative Container:</strong> I establish a positioning context for my absolute child.
+    
+    <div class="child-absolute">
+      <strong>Absolute Child:</strong> I am pinned to the top right of the yellow container, ignoring normal document flow.
+    </div>
+  </div>
+
+  <p style="margin-top: 50px;"><em>Keep scrolling down to test the sticky header and fixed nav!</em></p>
+
+</body>
+</html>
+
+<!-- remove fixed to show sticky header  -->

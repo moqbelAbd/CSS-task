@@ -1,0 +1,199 @@
+
+.page {
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    Margin: 100PX auto;
+}
+
+.container {
+    
+    width:60%;
+    padding:40px;
+    background-color: white;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.header{
+display: flex;
+justify-content: space-between;
+justify-self: center;
+width: 80%;
+height: 36px;
+border-radius: 4px;
+margin-top: 8px;
+padding: 8px;
+align-items: center;
+}
+
+.input-label-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+h1{
+    justify-self: center;
+}
+.first-page {
+    background-color: #dfe9f7;
+            height: 600px;
+
+}
+
+.first-container{
+border-radius: 10px;
+padding: 20px;
+max-width: 320px;
+background-color: rgb(193, 176, 202);
+}
+
+ .first-page h1{
+    font-weight: 300;
+    font-family:  Arial, sans-serif;
+    justify-self: center;
+    color:whitesmoke;
+}
+
+.first-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.full-name{
+    display: flex;
+    gap:8px;
+    width: 100%;
+}
+
+.full-name input{
+width:50%
+}
+.first-form-input{
+height: 35px;
+
+}
+
+input::placeholder{
+    padding-left:10px;
+
+}
+
+.first-show{
+    margin-top: 10px;
+    display: flex;
+    font-size:12px;
+    color: white;
+    gap:6PX;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.first-form-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-form-submit-button{
+background-color:#911380;
+border:1px #868686;
+border-radius: 16px;
+color:white;
+padding: 16px;
+width:90%;
+cursor:pointer;
+font-size: 20px;
+font-weight: 600;
+padding: 8PX;
+}
+
+.footer-inline{
+    display: block;
+    justify-self: center;
+    color: azure;
+}
+
+.first-form-inline-button{
+text-decoration: underline;
+color: azure;
+background-color:transparent;
+border:none;
+cursor:pointer;
+}
+
+.copyright{
+    justify-self: center;
+}
+
+
+
+.second-page{
+background: linear-gradient(135deg, #8b00d3 0%, #c400ff 100%);    width: 100%;
+    height: 100vh;
+    margin: 20px;
+}
+
+.page-container{
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 12px;
+    padding: 12px;
+    
+}
+
+.page-container img{
+    border-radius: 100px;
+    align-self: center;
+}
+.second-container{
+    width:280px;
+    border-radius: 8px;
+}
+
+.input-wrapper{
+border-radius: 15px;
+padding: 8px;
+background-color: #a8a7a7;
+
+}
+
+.second-form-input{
+width: 80%;
+height: 30px;
+border: none;
+background-color: transparent;
+
+}
+
+.second-footer-inline{
+        display: flex;
+        flex-direction: column;
+    justify-items: center;
+    color: black;
+    margin: auto;
+}
+
+.second-footer-inline a{
+    color: rgb(71, 201, 11);
+}
+
+.create-account {
+    display: block;
+    margin:auto;
+    margin-top: -30px;
+}
