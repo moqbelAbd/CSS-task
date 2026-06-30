@@ -1,0 +1,61 @@
+.first-page{
+    height: 500px;
+    background-color: rgb(219, 104, 210);
+        margin: 16px;
+        position: relative;
+}
+
+.inline-article{
+    display: inline-block;
+    height: 120px;
+    width: 200px;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    margin: 16px;
+}
+
+.middle-article{
+width: 100%;
+height:60px;
+overflow-y: scroll;
+    margin-left: 12px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 98%;
+}
+
+
+.second-page{
+background-color: rgb(250, 234, 165);
+margin: 4px;
+padding: 4px;
+}
+
+.article-container{
+background-color: beige;
+margin: 8px;
+padding: 8px;
+border: 1px solid black;
+width: 80%;
+}
+
+.red--article{
+color: red;
+border: 2px dotted red;
+
+}
+
+.red--article p{
+border: 1px dotted red;
+}
+
+.highlight{ background-color: burlywood;}
+
+.sticky{
+position: sticky;
+    top: 20px;    
+    float: right;  /* Pushes it to the right edge of the container */
+    height: 400px;
+    width: 120px;
+    border: 1px solid black;
+}
