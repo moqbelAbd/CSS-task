@@ -1,0 +1,125 @@
+.first-container{
+    height: 600px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    color:white
+}
+
+.left-container{
+    background-color:rgb(236, 236, 30);
+    align-content: center;
+    justify-items: center;
+}
+
+.right-container{
+    background-color:blue;
+    align-content: center;
+    justify-items: center;
+}
+
+.photos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 8px;
+}
+
+.photos-grid img {
+    width:100%;
+    height:100%
+}
+
+.Numbers-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr);
+    height:200px;
+    border: 4px solid rgb(202, 142, 12)
+}
+
+.Numbers-grid h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+        width: 100%;
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+.Numbers-grid :nth-child(1){
+    background-color:rgb(236, 236, 30);
+}
+.Numbers-grid :nth-child(2){
+    background-color:rgb(206, 226, 25);
+}
+.Numbers-grid :nth-child(3){
+    background-color:rgb(248, 204, 5);
+}
+.Numbers-grid :nth-child(4){
+    background-color:rgb(202, 154, 22);
+}
+.Numbers-grid :nth-child(5){
+    background-color:rgb(238, 145, 5);
+}
+.Numbers-grid :nth-child(6){
+    background-color:rgb(236, 112, 30);
+}
+.Numbers-grid :nth-child(7){
+    background-color:rgb(235, 75, 12);
+}
+.Numbers-grid :nth-child(8){
+    background-color:rgb(245, 8, 8);
+}
+.Numbers-grid :nth-child(9){
+    background-color:rgb(228, 11, 76);
+}
+.Numbers-grid :nth-child(10){
+    background-color:rgb(236, 30, 133);
+}
+
+
+.vertical--grid{
+    height: 85vh;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: 1fr;
+}
+
+.vertical--grid h1{
+     align-items: start;    
+    font-size:60px;
+    text-shadow: none
+
+}
+
+.page-structure{
+    height:500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-areas: "header header header"
+                         "article  article section"
+                         "footer footer footer";
+                         gap: 6px;
+}
+
+.header{
+    grid-area: header;
+    background-color:#000000;
+    width: 10;
+}
+
+.article{
+    grid-area:article;
+    background-color:rgb(236, 236, 30)
+}
+
+.section{
+    grid-area:section;
+    background-color: green
+}
+
+.footer{
+    grid-area:footer;
+    background-color:blue
+}
