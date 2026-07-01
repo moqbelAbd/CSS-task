@@ -5,13 +5,12 @@
     align-items: center;
     justify-content: center;
     justify-self: center;
-    width: 90%;
-    Margin: 100PX auto;
+    width: 600px;
 }
 
 .container {
     
-    width:60%;
+    width:320px;
     padding:40px;
     background-color: white;
     /* justify-content: space-between;
@@ -33,6 +32,7 @@ align-items: center;
 .input-label-group{
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 
 .inline-button{
@@ -46,26 +46,35 @@ align-items: center;
 h1{
     justify-self: center;
 }
+
+a{
+    color: #68a3f5;
+}
+a:hover{
+    text-decoration: underline;
+}
 .first-page {
-    background-color: #dfe9f7;
+    background-color: #5291e9;
             height: 600px;
 
 }
 
 .first-container{
-border-radius: 10px;
+border-radius: 4px;
 padding: 20px;
 max-width: 320px;
-background-color: rgb(193, 176, 202);
+background-color: white;
 }
 
  .first-page h1{
     font-weight: 300;
     font-family:  Arial, sans-serif;
-    justify-self: center;
-    color:whitesmoke;
+    justify-self: start;
 }
 
+ .first-page p{
+color: rgb(105, 105, 104);
+ }
 .first-form-group{
     display: flex;
     flex-direction: column;
@@ -75,7 +84,7 @@ background-color: rgb(193, 176, 202);
 .full-name{
     display: flex;
     gap:8px;
-    width: 100%;
+    width: 320px;
 }
 
 .full-name input{
@@ -95,29 +104,28 @@ input::placeholder{
     margin-top: 10px;
     display: flex;
     font-size:12px;
-    color: white;
     gap:6PX;
     font-family: sans-serif;
     justify-content: center;
     align-items: center;
 }
 
-.first-form-footer{
+/* .first-form-footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .first-form-submit-button{
-background-color:#911380;
+background-color:#5291e9;
 border:1px #868686;
-border-radius: 16px;
+border-radius: 4px;
 color:white;
 padding: 16px;
-width:90%;
+width: 120px;
 cursor:pointer;
 font-size: 20px;
-font-weight: 600;
+font-weight: 500;
 padding: 8PX;
 }
 
@@ -139,67 +147,81 @@ cursor:pointer;
     justify-self: center;
 }
 
+@media (max-width:576px) {
+    .full-name{
+        flex-direction: column;
+    }
+    .full-name input{
+        width:97%;
+    }
+    .first-container{
+        height:90%
+    }
+}
+
+
+
 
 
 .second-page{
-background: linear-gradient(135deg, #8b00d3 0%, #c400ff 100%);    width: 100%;
-    height: 100vh;
-    margin: 20px;
+    width: 100%;
+    height: 400px;
 }
 
-.page-container{
-    background-color: white;
-    width: 90%;
+
+.page-header{
     display: flex;
-    justify-content: space-around;
-    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
     padding: 12px;
-    
+    background-color:rgb(34, 28, 43);
+    box-sizing: border-box;
 }
 
-.page-container img{
-    border-radius: 100px;
-    align-self: center;
-}
-.second-container{
-    width:280px;
-    border-radius: 8px;
+.brand{
+    color: rgb(228, 105, 5);
 }
 
-.input-wrapper{
-border-radius: 15px;
-padding: 8px;
-background-color: #a8a7a7;
-
+.page-nav{
+    display: flex;
+    gap: 10px;
+    color: azure;
 }
 
-.second-form-input{
-width: 80%;
-height: 30px;
-border: none;
-background-color: transparent;
-
+.page-nav a{
+        color: white;
 }
 
-.second-footer-inline{
-        display: flex;
-        flex-direction: column;
+.middle-section{
+    background-color: beige;
+    justify-content:space-between;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+
+.message{
+    width: 320px;
+    height: 28px;
+}
+
+.page-footer{
     justify-items: center;
-    color: black;
-    margin: auto;
+    background-color: rgb(252, 209, 216);
+    margin: 0;
+    padding: 6px;
 }
-
-.second-footer-inline a{
-    color: rgb(71, 201, 11);
-    text-decoration: none;
-}
-
-.create-account {
-    display: block;
-    margin:auto;
-    margin-top: -30px;
-}
-
-.second-footer-inline a:hover{
-    text-decoration: underline;
+@media (max-width:576px){
+    .page-header{
+        flex-direction:column
+    }
+    .message{
+        width: 220px;
+    }
 }
